@@ -3,29 +3,24 @@
 	font-family: "MAD Serif";
 	font-style: normal;
 	font-weight: 800;
-	src: url("/assets/mad-serif-trial/madseriftrial-black.otf") format("opentype");
+	src: url("/assets/fonts/mad-serif-trial/madseriftrial-black.otf")
+		format("opentype");
 }
 @font-face {
 	font-display: swap;
 	font-family: "MAD Serif Fill";
 	font-style: normal;
 	font-weight: 800;
-	src: url("/assets/mad-serif-trial/madseriffilltrial-black.otf")
+	src: url("/assets/fonts/mad-serif-trial/madseriffilltrial-black.otf")
 		format("opentype");
-}
-@font-face {
-	font-display: swap;
-	font-family: "Plakat";
-	font-style: normal;
-	font-weight: 800;
-	src: url("/assets/PlakatTrial/PlakatTrial-Black.otf") format("opentype");
 }
 @font-face {
 	font-display: swap;
 	font-family: "Marche Super";
 	font-style: normal;
-	font-weight: 800;
-	src: url("/assets/marche-trial/marchetrial-super.otf") format("opentype");
+	font-weight: 400;
+	src: url("/assets/fonts/marche-trial/marchetrial-super.otf")
+		format("opentype");
 }
 
 * {
@@ -39,50 +34,60 @@ html {
 }
 
 body {
-	margin: 0;
+	background: white;
+	margin: 0 0 0 auto;
 	max-width: 600px;
-	padding-left: 4px;
+	padding: 0 4px;
 }
 
-h1 {
-	font-family: "MAD Serif", serif;
-	font-size: 102px;
-	font-weight: 800;
-	line-height: 1.15;
-	margin: 0 0 64px;
+header {
+	h1 {
+		font-family: "MAD Serif", serif;
+		font-size: 100px;
+		font-weight: 800;
+		line-height: 1.15;
+		margin: 24px 0 0;
+		overflow: hidden;
+		padding: 0 0 310px;
+		position: relative;
+		img {
+			bottom: 0;
+			display: block;
+			position: absolute;
+			right: -32px;
+		}
+	}
 }
 
 h2 {
-	border-bottom: 1px solid #d66f72;
-	font-family: "Plakat", sans-serif;
-	font-size: 18px;
-	font-weight: 800;
-	margin: 48px 0 0;
+	border-bottom: 2px solid #d66f72;
+	font-family: "Marche Super", sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	margin: 32px 0 0;
 	text-transform: uppercase;
+	&:not(:first-of-type) {
+		margin-top: 78px;
+	}
 }
 
 section {
 	display: flex;
-	margin: 0 0;
 	padding: 24px 0;
 	& + & {
-		border-top: 1px solid #ebb9bb;
+		border-top: 1px solid #d66f72;
 	}
 	h1 {
-		flex: 1 1 65%;
+		flex: 1 1 100%;
 		font-family: "MAD Serif Fill", serif;
-		font-size: 34px;
+		font-size: 48px;
 		font-weight: 800;
-		line-height: 1.4;
+		line-height: 1.2;
 		margin: 0;
-		// position: relative;
-		// top: -8px;
 	}
 	ul {
-		flex: 1 1 35%;
-		font-family: "Plakat", sans-serif;
+		font-family: "Marche Super", sans-serif;
 		font-size: 16px;
-		font-weight: 800;
 		list-style: none;
 		margin: 0;
 		padding: 0;
@@ -90,7 +95,9 @@ section {
 		text-transform: uppercase;
 		white-space: nowrap;
 		li {
-			margin-bottom: 12px;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
 			sup {
 				font-size: 8px;
 			}
@@ -98,10 +105,12 @@ section {
 	}
 }
 
-a,
-a:visited {
-	color: #14187a;
+a {
 	text-decoration: none;
+	&,
+	&:visited {
+		color: #14187a;
+	}
 }
 
 main {
