@@ -3,14 +3,15 @@
 	font-family: "MAD Serif";
 	font-style: normal;
 	font-weight: 800;
-	src: url("fonts/mad-serif-trial/madseriftrial-black.otf") format("opentype");
+	src: url("#{$url}#{$baseurl}/assets/fonts/mad-serif-trial/madseriftrial-black.otf")
+		format("opentype");
 }
 @font-face {
 	font-display: swap;
 	font-family: "MAD Serif Fill";
 	font-style: normal;
 	font-weight: 800;
-	src: url("fonts/mad-serif-trial/madseriffilltrial-black.otf")
+	src: url("#{$url}#{$baseurl}/assets/fonts/mad-serif-trial/madseriffilltrial-black.otf")
 		format("opentype");
 }
 @font-face {
@@ -18,7 +19,8 @@
 	font-family: "Marche Super";
 	font-style: normal;
 	font-weight: 400;
-	src: url("fonts/marche-trial/marchetrial-super.otf") format("opentype");
+	src: url("#{$url}#{$baseurl}/assets/fonts/marche-trial/marchetrial-super.otf")
+		format("opentype");
 }
 
 * {
