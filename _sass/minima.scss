@@ -27,84 +27,6 @@
 	box-sizing: border-box;
 }
 
-html {
-	background: #f9eaeb;
-	color: #c12126;
-	margin: 0;
-}
-
-body {
-	background: white;
-	margin: 0 0 0 auto;
-	max-width: 600px;
-	padding: 0 4px;
-}
-
-header {
-	h1 {
-		font-family: "MAD Serif", serif;
-		font-size: 100px;
-		font-weight: 800;
-		line-height: 1.15;
-		margin: 24px 0 0;
-		overflow: hidden;
-		padding: 0 0 310px;
-		position: relative;
-		img {
-			bottom: 0;
-			display: block;
-			position: absolute;
-			right: -32px;
-		}
-	}
-}
-
-h2 {
-	border-bottom: 2px solid #d66f72;
-	font-family: "Marche Super", sans-serif;
-	font-size: 24px;
-	font-weight: normal;
-	margin: 32px 0 0;
-	text-transform: uppercase;
-	&:not(:first-of-type) {
-		margin-top: 78px;
-	}
-}
-
-section {
-	display: flex;
-	padding: 24px 0;
-	& + & {
-		border-top: 1px solid #d66f72;
-	}
-	h1 {
-		flex: 1 1 100%;
-		font-family: "MAD Serif Fill", serif;
-		font-size: 48px;
-		font-weight: 800;
-		line-height: 1.2;
-		margin: 0;
-	}
-	ul {
-		font-family: "Marche Super", sans-serif;
-		font-size: 16px;
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		text-align: right;
-		text-transform: uppercase;
-		white-space: nowrap;
-		li {
-			line-height: 1.5;
-			margin: 0;
-			padding: 0;
-			sup {
-				font-size: 8px;
-			}
-		}
-	}
-}
-
 a {
 	text-decoration: none;
 	&,
@@ -113,5 +35,104 @@ a {
 	}
 }
 
+html {
+	background: #f9eaeb;
+	color: #c12126;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+}
+
+body > header {
+	padding: 4px;
+	position: fixed;
+	& nav {
+		display: flex;
+		flex-direction: column;
+		& + nav {
+			border-top: 2px solid #d66f72;
+			margin-top: 24px;
+			padding-top: 24px;
+		}
+		& a {
+			font-family: "Marche Super", sans-serif;
+			font-size: 24px;
+			font-weight: normal;
+			text-transform: uppercase;
+			display: flex;
+			align-items: center;
+		}
+	}
+}
+
 main {
+	background: white;
+	margin: 0 0 0 auto;
+	max-width: 600px;
+	padding: 0 4px;
+	& header {
+		& h1 {
+			font-family: "MAD Serif", serif;
+			font-size: 100px;
+			font-weight: 800;
+			line-height: 1.15;
+			margin: 0;
+			overflow: hidden;
+			padding: 0 0 310px;
+			position: relative;
+			img {
+				bottom: 0;
+				display: block;
+				position: absolute;
+				right: -32px;
+			}
+		}
+	}
+	& h2 {
+		border-bottom: 2px solid #d66f72;
+		font-family: "Marche Super", sans-serif;
+		font-size: 24px;
+		font-weight: normal;
+		margin: 32px 0 0;
+		text-transform: uppercase;
+		&:not(:first-of-type) {
+			margin-top: 78px;
+		}
+	}
+	& section {
+		display: flex;
+		padding: 24px 0;
+		& + section {
+			border-top: 1px solid #d66f72;
+		}
+		& h1 {
+			flex: 1 1 100%;
+			font-family: "MAD Serif Fill", serif;
+			font-size: 48px;
+			font-weight: 800;
+			line-height: 1.2;
+			margin: 0;
+		}
+		& ul {
+			font-family: "Marche Super", sans-serif;
+			font-size: 16px;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			text-align: right;
+			text-transform: uppercase;
+			white-space: nowrap;
+			& li {
+				line-height: 1.5;
+				margin: 0;
+				padding: 0;
+				& sup {
+					font-size: 8px;
+				}
+			}
+		}
+	}
 }
