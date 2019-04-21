@@ -79,7 +79,7 @@ body {
 main {
 	background: white;
 	max-width: 600px;
-	padding: 12px 4px;
+	padding: 12px 12px 12px 0;
 	position: relative;
 	& header {
 		& h1 {
@@ -102,13 +102,13 @@ main {
 }
 
 article {
-	margin-top: 128px;
+	margin-top: 144px;
 	& > h2 {
 		border-bottom: 2px solid #d66f72;
 		font-family: "Marche Super", sans-serif;
 		font-size: 24px;
 		font-weight: normal;
-		margin: 32px 0 0;
+		margin: 32px 0 12px;
 		text-transform: uppercase;
 		&:not(:first-of-type) {
 			margin-top: 78px;
@@ -151,6 +151,7 @@ article {
 	#where + & {
 		& h1:only-child {
 			border-bottom: 1px solid #d66f72;
+			padding-top: 6px;
 			padding-bottom: 24px;
 		}
 		& p {
