@@ -44,21 +44,19 @@ html {
 
 body {
 	margin: 0;
-}
-
-main {
 	background: white;
-	margin: 0 0 0 auto;
-	max-width: 600px;
-	padding: 12px 4px;
-	position: relative;
-	& aside {
-		background: white;
+	margin-left: auto;
+	max-width: 24px + 162px + 64px + 600px;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 24px;
+	& > aside {
 		height: 100%;
-		padding: 24px 64px 24px 24px;
-		position: fixed;
-		right: 600px;
+		margin: 0 64px 0 24px;
+		padding: 24px 0;
+		position: sticky;
 		top: 0;
+		width: 162px;
 		& nav {
 			display: flex;
 			flex-direction: column;
@@ -77,6 +75,13 @@ main {
 			}
 		}
 	}
+}
+
+main {
+	background: white;
+	max-width: 600px;
+	padding: 12px 4px;
+	position: relative;
 	& header {
 		& h1 {
 			font-family: "MAD Serif", serif;
@@ -95,7 +100,10 @@ main {
 			}
 		}
 	}
-	& h2 {
+}
+
+article {
+	& > h2 {
 		border-bottom: 2px solid #d66f72;
 		font-family: "Marche Super", sans-serif;
 		font-size: 24px;
@@ -119,6 +127,8 @@ main {
 			line-height: 1.2;
 			margin: 0 0 12px;
 		}
+	}
+	#when + & {
 		& ul {
 			display: flex;
 			flex-wrap: wrap;
@@ -139,6 +149,8 @@ main {
 				}
 			}
 		}
+	}
+	#where + & {
 		& p {
 			font-family: "Marche Super", sans-serif;
 			font-size: 16px;
