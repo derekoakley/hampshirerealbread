@@ -43,17 +43,15 @@ html {
 }
 
 body {
-	margin: 0;
 	background: white;
-	margin-right: auto;
-	max-width: 24px + 162px + 64px + 600px;
 	display: flex;
 	justify-content: flex-end;
-	margin-top: 24px;
+	margin: 24px 0 0;
+	max-width: 24px + 162px + 64px + 600px;
 	& > aside {
 		display: flex;
 		flex-direction: column;
-		height: 353px - 12px;
+		height: 350px - 16px;
 		justify-content: space-between;
 		margin: 0 64px 0 24px;
 		padding-top: 24px;
