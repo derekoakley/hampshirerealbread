@@ -49,5 +49,13 @@
 				font-size: 52px;
 			}
 		}
+		#market + & {
+			& section {
+				& ul {
+					display: flex;
+					flex-wrap: wrap;
+				}
+			}
+		}
 	}
 }
