@@ -1,0 +1,40 @@
+@media screen and (min-width: 30em) {
+	body {
+		display: flex;
+		max-width: 24px + 162px + 64px + 600px;
+		& > aside {
+			height: 350px - 16px;
+			padding-top: 24px;
+			margin-left: 24px;
+			margin-right: 64px;
+			width: 162px;
+			flex-direction: column;
+			& nav {
+				& a {
+					&[href="#"],
+					&[href*="tel"],
+					&[href*="mailto"] {
+						display: inline;
+					}
+					&[href*="instagram"],
+					&[href*="twitter"] {
+						text-align: left;
+					}
+				}
+			}
+		}
+		& > nav {
+			display: none;
+		}
+	}
+	main {
+		max-width: 600px;
+		padding-left: 0;
+		& header {
+			& h1 {
+				font-size: 100px;
+				padding-bottom: 310px;
+			}
+		}
+	}
+}

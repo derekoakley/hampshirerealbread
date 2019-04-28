@@ -2,7 +2,11 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {%- include head.html -%}
   <body>
-    <aside>{%- include nav.html -%}</aside>
+    <aside>
+      <nav>{%- include nav-primary.html -%}</nav>
+      <nav>{%- include nav-contact.html -%}{%- include nav-social.html -%}</nav>
+    </aside>
     <main class="page-content" aria-label="Content">{{ content }}</main>
+    <nav>{%- include nav-contact.html -%}</nav>
   </body>
 </html>
