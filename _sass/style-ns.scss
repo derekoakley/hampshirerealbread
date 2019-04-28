@@ -9,6 +9,7 @@
 			flex-direction: column;
 			& nav {
 				& a {
+					&[href="#"],
 					&[href*="tel"],
 					&[href*="mailto"] {
 						display: inline;
