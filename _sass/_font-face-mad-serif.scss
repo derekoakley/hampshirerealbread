@@ -1,0 +1,16 @@
+@font-face {
+	font-display: swap;
+	font-family: "MAD Serif";
+	font-style: normal;
+	font-weight: 800;
+	src: url("#{$url}#{$baseurl}/assets/fonts/mad-serif-trial/madseriftrial-black.otf")
+		format("opentype");
+}
+@font-face {
+	font-display: swap;
+	font-family: "MAD Serif Fill";
+	font-style: normal;
+	font-weight: 800;
+	src: url("#{$url}#{$baseurl}/assets/fonts/mad-serif-trial/madseriffilltrial-black.otf")
+		format("opentype");
+}
