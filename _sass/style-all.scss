@@ -112,19 +112,20 @@ main {
 	& header {
 		& h1 {
 			font-family: "MAD Serif", serif;
-			font-size: 64px - 6px;
+			font-size: 16vw;
 			font-weight: 800;
 			line-height: 1.15;
 			margin: 0;
-			padding-bottom: 190px;
+			padding-bottom: 53vw;
 			position: relative;
 			img {
 				bottom: 0;
 				display: block;
+				height: auto;
+				padding-left: 25vw;
 				position: absolute;
 				right: 0;
-				width: 250px;
-				height: 250px;
+				width: 100%;
 			}
 		}
 	}

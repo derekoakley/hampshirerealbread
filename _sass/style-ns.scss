@@ -25,12 +25,16 @@
 		}
 	}
 	main {
-		max-width: 600px;
 		padding-left: 0;
+		width: 600px;
 		& header {
 			& h1 {
 				font-size: 100px;
 				padding-bottom: 310px;
+				img {
+					max-width: 410px;
+					padding-left: 0;
+				}
 			}
 		}
 	}
