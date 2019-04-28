@@ -4,9 +4,7 @@
 		max-width: 24px + 162px + 64px + 600px;
 		& > aside {
 			height: 350px - 16px;
-			padding-top: 24px;
-			padding-left: 24px;
-			padding-right: 64px;
+			padding: 24px;
 			width: 162px + 64px;
 			flex-direction: column;
 			& nav {
