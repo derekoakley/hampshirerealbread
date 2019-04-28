@@ -50,14 +50,15 @@ body {
 	background: white;
 	margin: 0;
 	& > aside {
+		background: white;
 		display: flex;
-
 		justify-content: space-between;
 		margin: 0 12px;
 		padding-top: 12px;
 		position: -webkit-sticky;
 		position: sticky;
 		top: 0;
+		z-index: 1;
 		& nav {
 			display: flex;
 			flex-direction: column;
@@ -66,7 +67,6 @@ body {
 				font-size: 20px;
 				font-weight: normal;
 				text-transform: uppercase;
-				&[href="#"],
 				&[href*="tel"],
 				&[href*="mailto"] {
 					display: none;
@@ -79,19 +79,28 @@ body {
 		}
 	}
 	& > nav {
-		position: fixed;
 		background: white;
-		width: 100%;
 		bottom: 0;
-		left: 0;
-		padding: 12px;
 		display: flex;
 		justify-content: space-between;
+		left: 0;
+		padding: 12px;
+		position: fixed;
+		width: 100%;
 		& a {
 			font-family: "Marche Super", sans-serif;
 			font-size: 20px;
 			font-weight: normal;
 			text-transform: uppercase;
+		}
+	}
+}
+@supports (-webkit-backdrop-filter: blur(8px)) {
+	body {
+		& > aside,
+		& > nav {
+			background-color: rgba(255, 255, 255, 0.8);
+			-webkit-backdrop-filter: blur(8px);
 		}
 	}
 }
