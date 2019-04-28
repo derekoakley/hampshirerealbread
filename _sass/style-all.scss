@@ -156,11 +156,11 @@ article {
 				padding: 0;
 				white-space: nowrap;
 				& li {
-					margin: 0 0 2px;
-					padding: 0;
-					border-bottom: 1px solid #d66f72;
+					border-bottom: 1px solid #f9eaeb;
 					flex-grow: 1;
+					margin: 0 0 2px;
 					min-width: 50%;
+					padding: 0;
 					& sup {
 						font-size: 8px;
 					}
@@ -170,7 +170,7 @@ article {
 	}
 	#shop + & {
 		& h1:only-child {
-			border-bottom: 1px solid #d66f72;
+			border-bottom: 1px solid #f9eaeb;
 			padding-top: 6px;
 			padding-bottom: 24px;
 		}
@@ -178,7 +178,7 @@ article {
 			font-size: 16px;
 			margin: 0;
 			&:last-child {
-				border-bottom: 1px solid #d66f72;
+				border-bottom: 1px solid #f9eaeb;
 			}
 		}
 	}
