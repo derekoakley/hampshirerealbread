@@ -1,10 +1,10 @@
 @media screen and (min-width: 30em) {
 	body {
 		display: flex;
-		max-width: 24px + 162px + 64px + 600px;
+		max-width: 162px + 64px + 600px;
 		padding-bottom: 0;
 		& > aside {
-			height: 350px - 12px;
+			height: 350px - 22px;
 			padding: 24px 24px 0;
 			width: 162px + 64px;
 			flex-direction: column;
@@ -29,13 +29,11 @@
 		}
 	}
 	main {
-		padding-top: 12px;
-		padding-left: 0;
 		width: 600px;
 		& header {
 			& h1 {
-				font-size: 100px;
-				padding-bottom: 310px;
+				font-size: 98px;
+				padding-bottom: 310px - 24px;
 				img {
 					max-width: 410px;
 					padding-left: 0;
@@ -44,7 +42,7 @@
 		}
 	}
 	article {
-		margin-top: 115px;
+		padding: 18px 0 115px 12px;
 		& section {
 			& h1 {
 				font-size: 52px;

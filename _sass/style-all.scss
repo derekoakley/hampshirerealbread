@@ -19,7 +19,7 @@ a {
 }
 
 html {
-	background: #f9eaeb;
+	background: #faf9f9;
 	color: #c12126;
 	font-family: "Marche Super", sans-serif;
 	line-height: 1.5;
@@ -91,10 +91,11 @@ body {
 
 main {
 	background: white;
-	padding: 0 12px 12px 10px;
 	width: 100%;
 	position: relative;
 	& header {
+		background: #f9eaeb;
+		padding: 12px 12px 0;
 		& h1 {
 			font-family: "MAD Serif", serif;
 			font-size: 16vw;
@@ -110,7 +111,7 @@ main {
 				height: auto;
 				padding-left: 25vw;
 				position: absolute;
-				right: 0;
+				right: -12px;
 				width: 100%;
 			}
 		}
@@ -118,7 +119,7 @@ main {
 }
 
 article {
-	margin-top: 146px;
+	padding: 146px - 12px 12px 12px;
 	& > h2 {
 		border-bottom: 2px solid #d66f72;
 		font-size: 26px;
