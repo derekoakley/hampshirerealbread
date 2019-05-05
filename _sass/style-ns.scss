@@ -4,10 +4,11 @@
 		max-width: 162px + 64px + 600px;
 		padding-bottom: 0;
 		& > aside {
-			height: 350px - 24px;
+			flex-direction: column;
+			height: 326px;
+			line-height: 1;
 			padding: 23px 24px 0;
 			width: 162px + 64px;
-			flex-direction: column;
 			& nav {
 				&:nth-child(2) {
 					text-align: left;
@@ -33,7 +34,7 @@
 		& header {
 			& h1 {
 				font-size: 98px;
-				padding-bottom: 310px - 24px;
+				padding-bottom: 310px;
 				span {
 					width: 7px;
 				}
