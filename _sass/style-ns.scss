@@ -34,8 +34,11 @@
 			& h1 {
 				font-size: 98px;
 				padding-bottom: 310px - 24px;
+				span {
+					width: 7px;
+				}
 				img {
-					max-width: 410px;
+					max-width: 400px;
 					padding-left: 0;
 				}
 			}
