@@ -1,0 +1,16 @@
+@font-face {
+	font-display: swap;
+	font-family: "Mabry";
+	font-style: normal;
+	font-weight: 400;
+	src: url("#{$url}#{$baseurl}/assets/fonts/mabry-trial/mabrytrial-regular.otf")
+		format("opentype");
+}
+@font-face {
+	font-display: swap;
+	font-family: "Mabry";
+	font-style: normal;
+	font-weight: 700;
+	src: url("#{$url}#{$baseurl}/assets/fonts/mabry-trial/mabrytrial-bold.otf")
+		format("opentype");
+}
