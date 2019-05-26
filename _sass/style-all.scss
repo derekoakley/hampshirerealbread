@@ -127,10 +127,12 @@ main {
 article {
 	padding: 146px - 12px 0 12px 12px;
 	& > h2 {
-		border-bottom: 2px solid #d66f72;
-		font-size: 26px;
+		border-bottom: 1px solid #d66f72;
+		font-size: 64px;
 		font-weight: 700;
 		margin: 0;
+		font-family: "MAD Serif", serif;
+		font-weight: 400;
 	}
 	& section {
 		padding: 12px 0;
