@@ -34,11 +34,10 @@ html {
 article {
 	nav {
 		background: white;
-		margin-left: 50%;
-		padding: 0 24px;
+		padding: 0 12px;
 		position: fixed;
+		width: 100%;
 		top: 0;
-		width: 50%;
 		z-index: 1;
 		@supports (-webkit-backdrop-filter: blur(8px)) {
 			& {
@@ -48,12 +47,11 @@ article {
 		}
 		ul {
 			align-items: center;
-			border-bottom: 1px solid #efd3d4;
 			display: flex;
-			font-size: 20px;
+			font-size: 18px;
 			list-style: none;
 			margin: 0 auto;
-			padding: 24px 0;
+			padding: 12px 0;
 			width: 100%;
 			li {
 				&:nth-child(2),
@@ -75,15 +73,11 @@ article {
 	}
 	header {
 		background: #f9eaeb;
-		height: 100%;
-		left: 0;
-		padding: 0 24px;
-		position: fixed;
-		top: 0;
-		width: 50%;
+		padding: 38px 12px 12px;
+		position: relative;
 		h1 {
 			font-family: "MAD Serif", serif;
-			font-size: 7.7vw;
+			font-size: 15vw;
 			font-weight: 800;
 			margin: 0;
 			position: relative;
@@ -91,7 +85,7 @@ article {
 			&::before {
 				// TODO: Logo
 				display: block;
-				margin-bottom: 4px;
+				margin: 4px 0;
 				content: "";
 				width: 64px;
 				height: 64px;
@@ -102,17 +96,11 @@ article {
 			}
 		}
 		& > img {
-			position: absolute;
-			right: 0;
-			bottom: 0;
-			width: 32vw;
-			height: auto;
+			display: none;
 		}
 	}
 	& > div {
-		margin-left: 50%;
-		padding: 69px + 24px 24px 24px;
-		width: 50%;
+		padding: 12px;
 		div#market,
 		div#shop,
 		div#bread,

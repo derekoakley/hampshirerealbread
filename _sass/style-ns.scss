@@ -1,64 +1,48 @@
 @media screen and (min-width: 30em) {
-	// body {
-	// 	display: flex;
-	// 	max-width: 162px + 64px + 600px;
-	// 	padding-bottom: 0;
-	// 	& > aside {
-	// 		flex-direction: column;
-	// 		height: 326px;
-	// 		line-height: 1;
-	// 		padding: 23px 24px 0;
-	// 		width: 162px + 64px;
-	// 		& nav {
-	// 			&:nth-child(2) {
-	// 				text-align: left;
-	// 			}
-	// 			& a {
-	// 				&[href="#"],
-	// 				&[href*="tel"],
-	// 				&[href*="mailto"] {
-	// 					&,
-	// 					& + br {
-	// 						display: inline;
-	// 					}
-	// 				}
-	// 			}
-	// 		}
-	// 	}
-	// 	& > nav {
-	// 		display: none;
-	// 	}
-	// }
-	// main {
-	// 	width: 600px;
-	// 	& header {
-	// 		& h1 {
-	// 			font-size: 98px;
-	// 			padding-bottom: 300px;
-	// 			span {
-	// 				width: 7px;
-	// 			}
-	// 			img {
-	// 				max-width: 400px;
-	// 				padding-left: 0;
-	// 			}
-	// 		}
-	// 	}
-	// }
-	// article {
-	// 	padding: 18px 0 115px 12px;
-	// 	& section {
-	// 		& h1 {
-	// 			font-size: 52px;
-	// 		}
-	// 	}
-	// 	#market + & {
-	// 		& section {
-	// 			& ul {
-	// 				display: flex;
-	// 				flex-wrap: wrap;
-	// 			}
-	// 		}
-	// 	}
-	// }
+	article {
+		nav {
+			margin-left: 50%;
+			top: 0;
+			width: 50%;
+			padding: 0 24px;
+			ul {
+				border-bottom: 1px solid #efd3d4;
+				padding: 24px 0;
+				font-size: 20px;
+			}
+		}
+		header {
+			padding: 0 24px 24px;
+			height: 100%;
+			left: 0;
+			position: fixed;
+			top: 0;
+			width: 50%;
+			h1 {
+				font-size: 7.7vw;
+			}
+			& > img {
+				bottom: 0;
+				display: block;
+				height: auto;
+				position: absolute;
+				right: 0;
+				width: 32vw;
+			}
+		}
+		& > div {
+			margin-left: 50%;
+			padding: 69px + 24px 24px;
+			width: 50%;
+			div#market,
+			div#shop,
+			div#bread,
+			div#pastry,
+			div#about {
+				// TODO: align shop, etc articles
+				position: relative;
+				top: -124px;
+			}
+		}
+	}
 }
