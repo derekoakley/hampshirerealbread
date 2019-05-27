@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<header>
-	<h1>
-		Hampshire <br />Real <span></span>Bread <br />Co.
-		<!-- <img height="440" src="{{ site.url }}{{ site.baseurl }}/assets/images/hampshirerealbread_1550824982.jpg" width="440"> -->
+<article>
+	<nav>{%- include nav-primary.html -%}</nav>
+	<header>
+		<h1>Hampshire <br />Real Bread <br />Co.</h1>
 		<img
 			height="400"
 			src="{{ site.url }}{{
@@ -13,18 +13,20 @@ layout: default
 			}}/assets/images/bearboyfresh_1553858283.jpg"
 			width="400"
 		/>
-	</h1>
-</header>
-<div id="market"></div>
-{%- include market.html -%}
-<div id="shop"></div>
-{%- include shop.html -%}
-<div id="bread"></div>
-{%- include bread.html -%}
-<div id="pastry"></div>
-{%- include pastry.html -%}
-<div id="about"></div>
-{%- include about.html -%}
+	</header>
+	<div>
+		<div id="market"></div>
+		{%- include market.html -%}
+		<div id="shop"></div>
+		{%- include shop.html -%}
+		<div id="bread"></div>
+		{%- include bread.html -%}
+		<div id="pastry"></div>
+		{%- include pastry.html -%}
+		<div id="about"></div>
+		{%- include about.html -%}
+	</div>
+</article>
 
 <!-- <div class="home">
   {%- if page.title -%}
