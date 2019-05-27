@@ -73,26 +73,26 @@ article {
 	}
 	header {
 		background: #f9eaeb;
-		padding: 38px 12px 12px;
+		padding: 42px 12px 12px;
 		position: relative;
 		h1 {
 			font-family: "MAD Serif", serif;
-			font-size: 15vw;
+			font-size: 16vw;
 			font-weight: 800;
 			margin: 0;
 			position: relative;
 			text-transform: capitalize;
 			&::before {
 				// TODO: Logo
-				display: block;
-				margin: 4px 0;
 				content: "";
-				width: 64px;
+				display: block;
 				height: 64px;
+				margin: 4px 0;
+				width: 64px;
 			}
 			span {
-				width: 7px;
 				display: inline-block;
+				width: 1.1vw;
 			}
 		}
 		& > img {
