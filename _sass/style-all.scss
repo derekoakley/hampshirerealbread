@@ -125,15 +125,14 @@ article {
 
 details {
 	margin-bottom: 48px;
-
 	summary {
 		color: #14187a;
-		display: flex;
-		padding-bottom: 6px;
-		// margin-bottom: 6px;
+		// display: flex;
 		overflow: hidden;
+		padding-bottom: 6px;
 		&::-webkit-details-marker {
 			margin-top: 14px;
+			float: left;
 		}
 		h1 {
 			font-family: "Mabry", sans-serif;
@@ -141,6 +140,7 @@ details {
 			font-weight: 700;
 			max-width: 310px;
 			text-transform: capitalize;
+			float: left;
 		}
 	}
 	p,
